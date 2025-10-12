@@ -1,21 +1,20 @@
-@font-face {
-  font-family: Roboto;
-  src: url(roboto-fonts/Roboto-VariableFont_wdth\,wght.ttf);
-  /* font-style: italic; */
-  font-weight: bold;
-}
-
 html {
 font-family: "Roboto", sans-serif;
 font-size: 18px;
 line-height: 1.5;
+color: #444;
+background-color: #ff0;
 }
 
 h1 {
   text-align: center;
-  font-style: italic;
+  background-color: rgba(50%,0%,255%,0.3);
+  color: #00000088;
 }
 
 p {
   text-align: justify;
 }
+
+
+/* https://www.w3schools.com/tags/ref_colornames.asp */
