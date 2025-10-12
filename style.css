@@ -1,20 +1,30 @@
 html {
 font-family: "Roboto", sans-serif;
-font-size: 18px;
+font-size: 16px;
 line-height: 1.5;
-color: #444;
-background-color: #ff0;
 }
 
 h1 {
   text-align: center;
-  background-color: rgba(50%,0%,255%,0.3);
-  color: #00000088;
+  font-size: 2rem;
+  line-height: 1em;
 }
 
 p {
   text-align: justify;
+  font-size: 1rem;
+}
+
+div {
+  font-size: 1.25rem;
 }
 
 
 /* https://www.w3schools.com/tags/ref_colornames.asp */
+
+/* rem is root em */
+
+/* 
+font-size: 2em; related to parent element 
+line-height: 1em; related to current element, 
+i.e. to  font-size: 2em */
