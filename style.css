@@ -1,16 +1,19 @@
 body {
   margin: 0;
-  margin: 10px;
 }
 
+.message {
+  height: 100px;
+}
 
-.box {
-  height: 200px;
+.message-danger {
+  background-color: red;
+}
+
+.message-success {
   background-color: green;
-  margin-top: 40px;
 }
 
-.box2 {
-  margin: 15px;
-  height: 10px;
+.message-info {
+  background-color: blue;
 }
