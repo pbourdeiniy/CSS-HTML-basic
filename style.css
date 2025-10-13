@@ -1,23 +1,16 @@
-.title {
-   margin: 20px;
-   /* padding: 30px; */
-   font-size: 2em;
-   font-weight: bold;
-   font-style: normal;
-   text-align: center;
-   background-color: lightgreen;
-   /* width: 300px; */
-   height: 70px;
-   line-height: 70px;
+body {
+  margin: 0;
+  margin: 10px;
 }
 
-.message {
-  padding: 10px 20px;
-  text-align: justify;
-  background-color: #ddd;
+
+.box {
+  height: 200px;
+  background-color: green;
+  margin-top: 40px;
 }
 
-.inline {
-  display: inline-block;
-  /* display: inline; */
+.box2 {
+  margin: 15px;
+  height: 10px;
 }
