@@ -1,21 +1,39 @@
-.nav {
-  background-color: #000;
-  text-align: center;
-  display: inline-block;
-}
+
 
 .nav__link {
   color: #fff;
   text-decoration: none;
-  margin-left: 240px;
+  /* margin-left: 50px; */
+  padding: 0 10px;
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  background-color: #444;
+  /* margin: 0 40px */
 }
 
+.nav__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  /* align-items: center; */
+  gap: 40px;
+} 
+
+.nav__item {
+  background-color: #444;
+}
+
+
+
+/* #region Header with logo */
 .header {
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .logo__image {
@@ -24,3 +42,4 @@
   display: block;
   border-radius: 10px;
 }
+/* #endregion */
