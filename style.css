@@ -1,15 +1,14 @@
+
+ 
  body {
   margin: 0;
- }
-
- .outer {
-  /* height: 200px; */
-  /* width: 500px; */
   background-color: #ffd700;
  }
 
+
+
  .inner {
-  height: 50%;
-  width: 50%;
+  width: 50vw;
+  height: 50vh;
   background-color: #0057b7;
  }
