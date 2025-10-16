@@ -1,22 +1,45 @@
-.title {
+
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  /* margin-left: 50px; */
+  padding: 0 10px;
+  display: block;
   height: 80px;
   line-height: 80px;
-  color: #fff;
-  background-color: #333;
-  text-align: center;
+  background-color: #444;
+  /* margin: 0 40px */
 }
 
-.message {
-  margin: 10px 0;
-  padding: 20px;
-  text-align: center;
-  background-color: #ddd;
-  border-radius: 30px;
-  /* border: 1px solid #000; */
-  border-style: solid;
+.nav__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  /* align-items: center; */
+  gap: 40px;
+} 
+
+.nav__item {
+  background-color: #444;
 }
 
-.container {
- max-width: 800px; 
- margin: 0 auto;
+
+
+/* #region Header with logo */
+.header {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
+
+.logo__image {
+  width: 80px;
+  height: 60px;
+  display: block;
+  border-radius: 10px;
+}
+/* #endregion */
