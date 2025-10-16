@@ -1,45 +1,15 @@
-
-
-.nav__link {
-  color: #fff;
-  text-decoration: none;
-  /* margin-left: 50px; */
-  padding: 0 10px;
-  display: block;
-  height: 80px;
-  line-height: 80px;
-  background-color: #444;
-  /* margin: 0 40px */
-}
-
-.nav__list {
+ body {
   margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  /* align-items: center; */
-  gap: 40px;
-} 
+ }
 
-.nav__item {
-  background-color: #444;
-}
+ .outer {
+  /* height: 200px; */
+  /* width: 500px; */
+  background-color: #ffd700;
+ }
 
-
-
-/* #region Header with logo */
-.header {
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.logo__image {
-  width: 80px;
-  height: 60px;
-  display: block;
-  border-radius: 10px;
-}
-/* #endregion */
+ .inner {
+  height: 50%;
+  width: 50%;
+  background-color: #0057b7;
+ }
