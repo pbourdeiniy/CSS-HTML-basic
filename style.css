@@ -1,28 +1,19 @@
-/* h1  */
-/* .some-class */
-/* #some-id */
-/* * */
+ /* .container, .box select elemets with class .container or .box */
+/* .container.box select elemets with classes .container and .box simultaneously */
+/* .container .box select elements inside container with class box, but not container but not the container itself */
+/* .container > .box select elements inside .container with class box that are 1st level descendants */
+/* .container > * select all elements inside container that are 1st level descendants */
+/* .container > * > .box select inside any .container descendant elements with class box i.e. container grandchildren */
+/* .container > * > * select any container grandchildren i.e. 2nd level descendants */
+/* .container ~ .box select all elements with class box that are resided after .container at the same level */
+/* .container + .box select element (the one) with class box that is resided right after container at the same level */
+/* .box + .container equal to previous one but container is selected */
+/* .container :not(.box) select all elements inside container which havent class box */
 
-/* [title] selected all alements with title attribute */
-/* [id] selected all alements with id attribute */
-
-/* [title='pages'] exact match selected all alements with title attribute which has value pages */
-/* [title^='page']. selected all alements with title attribute which value starts with 'page' */
-
-/* [title$='page'] selected all alements with title attribute which value ends with 'page' */
-
-/* [title*='page'] selected all alements which title attribute value has text 'page' */
-
-
-/*[title~='page']  selected all alements which title attribute value has text 'page' as separate word' */
-
-/*[title|='page'] selected all alements which title attribute value has text 'page' as prefix or whole word' */
-
-[title|='page'] 
+/* .container:has(.box) select .container if it contains .box */
+/* .container :has(.box) select elements inside .container that contain .box */
+/* .container *:has(.box) the same as previous one rule, * means 'all elements' */
+.container :has(.box)
 {
-  background-color: #8f0;
-}
-
-b {
-  color: red;
+  background-color: green;
 }
