@@ -1,19 +1,17 @@
- /* .container, .box select elemets with class .container or .box */
-/* .container.box select elemets with classes .container and .box simultaneously */
-/* .container .box select elements inside container with class box, but not container but not the container itself */
-/* .container > .box select elements inside .container with class box that are 1st level descendants */
-/* .container > * select all elements inside container that are 1st level descendants */
-/* .container > * > .box select inside any .container descendant elements with class box i.e. container grandchildren */
-/* .container > * > * select any container grandchildren i.e. 2nd level descendants */
-/* .container ~ .box select all elements with class box that are resided after .container at the same level */
-/* .container + .box select element (the one) with class box that is resided right after container at the same level */
-/* .box + .container equal to previous one but container is selected */
-/* .container :not(.box) select all elements inside container which havent class box */
+/* .box::first-letter    select just .box element 1st letter  */
+ /* .box::first-line    select .box element 1st line */
+/* .box::selection    affects selected .box element text   */
+/* .box::before  targets pseudo-element that appears before .box content  */
+  /* .box::after  targets pseudo-element that appears before closing tag of .box content  */
 
-/* .container:has(.box) select .container if it contains .box */
-/* .container :has(.box) select elements inside .container that contain .box */
-/* .container *:has(.box) the same as previous one rule, * means 'all elements' */
-.container :has(.box)
-{
-  background-color: green;
+
+.box::before,
+.box::after
+ {
+  content: '';
+  height: 10px;
+  color: purple;
+  background-color: yellowgreen;
+  display: block;
+   
 }

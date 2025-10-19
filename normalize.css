@@ -2,13 +2,3 @@ html {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-div {
-  border: 2px solid blue;
-  margin: 10px 20px;
-  background-color: yellow;
-}
-
-.container {
-  border: 5px solid red;
-  margin: 10px 20px;
-}
