@@ -7,14 +7,16 @@
 specificity helps browser to determine which rule to apply when element s property has multiple conflicting values
  */
 
-
-.message {
-  background-color: orange;
+ 
+ body > h1  {
+  background-color: green;
 }
 
-p {
-  background-color: yellow;
+body h1 {
+  background-color: red;
 }
+
+ 
 
 
 
