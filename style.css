@@ -1,29 +1,30 @@
+/* 
+0 - *
+1 - p, ::after
+2 - .message, [id], :first-child
+3 - #notification
 
+specificity helps browser to determine which rule to apply when element s property has multiple conflicting values
+ */
 
+ 
 
-
-
-
-/* .container :first-child  select 1st element inside parent element  */
-/* .container:first-child   select .container if it is a first child in its parent element  */
-/* .container :last-child  select last element inside parent element on any level of nesting */
-/* .container > :last-child  select last element inside parent element on 1st level of nesting */
-/* .container > :first-of-type select every 1st element of its type on 1st nesting level */
-/* .container > div:first-of-type  select 1st div inside .container on 1st nesting level */
-/* .container > .hello:first-of-type  select element with class .hello if it is the 1st element of its type */
-/* .container :nth-child(3)  select element by its index on 1st level of nesting (now we selected 3rd element inside .contsiner) */
-/* .container :nth-child(3n + 2) select elements that are results of expression (3n + 2). Here 3 is a coefficient, n iterates from 0 to infinity( 0, 1, 2 etc.) */
-/* .container :nth-child(5n + 2) in plain words we select every 5th element starting from 2 */
-/* .container :nth-child(-5n + 8) we can also use a negative value. here we have 8th and 3rd element */
-/* .container :nth-child(-n + 5)  used to select some 1st elements. Here we have 1st 5 elements */
-/* .container :nth-child(n + 5) here we have elements starting from 5 */
-/* .container :nth-of-type(n + 4) here we selected elements specific type starting from 4 (in our case <p>) */
-
-/* .container :hover   Select any element when it is pointed (hovered). Its supposed to do with all elements which interact with users */
-
-.container :hover
- {
-  border: 2px solid red;
-  margin: 5px;
+ #page-title {
+  background-color: green;
 }
+
+ .title {
+  background-color: yellow !important;
+}
+
+ h1 {
+ background-color: red !important; 
+ }
+ 
+
+ 
+
+ 
+
+
 
