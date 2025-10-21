@@ -13,11 +13,13 @@ specificity helps browser to determine which rule to apply when element s proper
   background-color: green;
 }
 
- .title:hover {
-  background-color: red;
-  color: yellow;
+ .title {
+  background-color: yellow !important;
 }
 
+ h1 {
+ background-color: red !important; 
+ }
  
 
  
