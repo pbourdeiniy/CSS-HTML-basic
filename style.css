@@ -8,13 +8,19 @@ specificity helps browser to determine which rule to apply when element s proper
  */
 
  
- body > h1  {
+
+ #page-title {
   background-color: green;
 }
 
-body h1 {
+ .title:hover {
   background-color: red;
+  color: yellow;
 }
+
+ 
+
+ 
 
  
 
