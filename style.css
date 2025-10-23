@@ -1,29 +1,43 @@
-a {
-  display: block;
-  padding: 5px 10px;
-  margin: 5px 0;
+ html {
+   scroll-behavior: smooth;
+}
+
+ body {
+  margin: 0;
+ }
+
+ .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #222;
+ }
+
+ .nav__link {
+  line-height: 40px;
   text-decoration: none;
-  background-color: #ccc;
-}
+  color: #fff;
+ }
 
-a:link {
-  color: green;
-}
-a:visited {
-  color: red;
-}
-a:hover {
-  color: blue;
-}
-a:active {
-  color: orange;
-}
+ .nav__link:hover {
+  color: #888;
+ }
+ 
+ main {
+  padding: 20px;
+ }
 
- 
- 
- /* LoVeHAte */
+ .section {
+  height: 400px;
+  border: 5px solid #0057b7;
+  background-color: #ffd700;
+  padding: 0 5px;
+  margin: 10px 0;
+ }
 
- 
+ .section:target {
+  background-color: green;
+ }
 
 
 
