@@ -1,25 +1,6 @@
-/* 
-0 - *
-1 - p, ::after
-2 - .message, [id], :first-child
-3 - #notification
-
-specificity helps browser to determine which rule to apply when element s property has multiple conflicting values
- */
-
- 
-
- #page-title {
-  background-color: green;
+a {
+  display: block;
 }
-
- .title {
-  background-color: yellow !important;
-}
-
- h1 {
- background-color: red !important; 
- }
  
 
  
