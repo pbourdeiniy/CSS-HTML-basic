@@ -1,43 +1,23 @@
- html {
-   scroll-behavior: smooth;
+ .image {
+  display: none;
+  width: 100%;
+  height: 2000px;
+  object-fit: cover;
+  object-position: center -100px;
+ }
+
+.main {
+  height: 2000px;
+  background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-beach-free-image-after-sunset-sky-free-photo.jpeg?w=2210&quality=70);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -100px;
 }
 
- body {
-  margin: 0;
- }
-
- .nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  background-color: #222;
- }
-
- .nav__link {
-  line-height: 40px;
-  text-decoration: none;
+.title {
   color: #fff;
- }
-
- .nav__link:hover {
-  color: #888;
- }
- 
- main {
-  padding: 20px;
- }
-
- .section {
-  height: 400px;
-  border: 5px solid #0057b7;
-  background-color: #ffd700;
-  padding: 0 5px;
-  margin: 10px 0;
- }
-
- .section:target {
-  background-color: green;
- }
+  text-align: center;
+} 
 
 
 
