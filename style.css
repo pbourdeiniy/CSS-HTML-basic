@@ -1,18 +1,25 @@
-.box1, .box2 {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: blue;
-  margin: 10px;
+body {
+  background-color: red;
+  
 }
 
-.container {
-  background: green;
+@media (min-width: 900px) or (orientation: portrait) {
+  body {
+    background-color: yellow;
+  }
 }
 
+/* all, screen, print, speach */
 
-.container::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+/* can be and/or
+You can use commas , to mean “or” between conditions */
+
+/* width, max-width, min-width
+   height, min-height, max-height
+   orientation: portrait, landscape
+   resolution, min-resolution, max-resolution: 300dpi
+*/
+
+/* We can control styles for different 
+devices using @media queries, most 
+commonly with min-width or max-width */
