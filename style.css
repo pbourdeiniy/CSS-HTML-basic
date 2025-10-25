@@ -1,25 +1,10 @@
-body {
-  background-color: red;
-  
+.picture {
+  width: 100%;
+  border: 10px solid #000;
+  box-sizing: border-box;
 }
 
-@media (min-width: 900px) or (orientation: portrait) {
-  body {
-    background-color: yellow;
-  }
-}
-
-/* all, screen, print, speach */
-
-/* can be and/or
-You can use commas , to mean “or” between conditions */
-
-/* width, max-width, min-width
-   height, min-height, max-height
-   orientation: portrait, landscape
-   resolution, min-resolution, max-resolution: 300dpi
-*/
-
-/* We can control styles for different 
-devices using @media queries, most 
-commonly with min-width or max-width */
+ /* Using the <picture> tag with 
+ <source> elements lets you flexibly 
+ change images to optimize quality 
+ and loading speed */
