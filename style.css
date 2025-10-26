@@ -1,27 +1,38 @@
-.picture {
- border: 10px solid #000;
- background-image: url(https://placehold.co/300x150/ff0/00f.png);
- height: 0;
- padding-bottom: 50%;
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
-}
+ .form-field {
+  display: block;
+  margin-bottom: 10px;
+ }
 
-@media (min-width: 576px) {
-  .picture {
-    background-image: url(https://placehold.co/400x200/ff0/00f.png);
-  }
-}
+ input::placeholder {
+  color: purple;
+  font-weight: bold;
+ }
 
+ :focus {
+  background-color: #ff0;
+ }
 
-@media (min-width: 768px) {
-  .picture {
-  background-image: url(https://placehold.co/1200x600/ff0/00f.png);
-}
-}
+ /* :valid  */
+  input:invalid {
+  border-color: red;
+ }
 
-/* To optimize background images, you can 
-use @media queries. To maintain the 
-desired aspect ratio, you can use 
-padding-bottom with percentage values */
+ input:checked + label {
+  color: green;
+ }
+
+ label:has(input:checked) {
+  color: blue;
+ }
+
+ button:hover {
+  color: blue;
+ }
+
+ button:active {
+  color: orange;
+ }
+
+ button:disabled {
+  color: #444;
+ }

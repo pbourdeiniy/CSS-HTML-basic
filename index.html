@@ -15,10 +15,53 @@
 </head>
 <!-- #endregion -->
 <body>
-<div class="picture">
-  
-</div>
- 
+ <h1>Mate academy</h1>
+
+ <form action="http://localhost:3000/api" method="post">
+  <label class="form-field">
+    username: <br>
+    <input 
+    type="text"
+    name='username'
+    placeholder="Enter your name"
+    >
+  </label>
+
+  <label class="form-field">
+    Email: <br>
+    <input 
+    type="email"
+    name="email">
+  </label>
+
+  <label class="form-field">
+    Password: <br>
+    <input 
+    type="password"
+    name="password"
+    required>
+  </label>
+
+  <label class="form-field">
+    <input 
+    type="checkbox" 
+    name="accepted" 
+    value="yes">
+    I accept the terms
+  </label>
+
+  <div class="form-field">
+    <input 
+    type="checkbox" 
+    name="remember" 
+    value="yes" 
+    id="remember-me">
+  <label for="remember-me">Remember me</label>
+  </div>
+
+  <button disabled>Sign up</button>
+
+ </form>
 
 </body>
 </html>
