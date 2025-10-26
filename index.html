@@ -17,13 +17,14 @@
 <body>
  <h1>Mate academy</h1>
 
- <form action="http://localhost:3000/api" method="post">
+ <form action="https://httpbin.org/post " method="post">
   <label class="form-field">
     username: <br>
     <input 
     type="text"
     name='username'
     placeholder="Enter your name"
+    value="Pasha"
     >
   </label>
 
@@ -31,7 +32,8 @@
     Email: <br>
     <input 
     type="email"
-    name="email">
+    name="email"
+    >
   </label>
 
   <label class="form-field">
@@ -39,7 +41,7 @@
     <input 
     type="password"
     name="password"
-    required>
+    >
   </label>
 
   <label class="form-field">
@@ -55,11 +57,14 @@
     type="checkbox" 
     name="remember" 
     value="yes" 
-    id="remember-me">
+    id="remember-me"
+    checked>
   <label for="remember-me">Remember me</label>
   </div>
 
-  <button disabled>Sign up</button>
+  <button type="submit" disabled>Sign up</button>
+  <button type="reset">Reset</button>
+  <button type="button">Button</button>
 
  </form>
 

@@ -34,5 +34,15 @@
  }
 
  button:disabled {
-  color: #444;
+  /* color: #444; */
  }
+
+/* Buttons and links are interactive interface 
+elements that let users interact with a page.
+The submit and reset button types are typically 
+used within forms. Buttons with type="button"
+are used to perform actions without changing 
+the page address. Usually, you handle button 
+clicks with JavaScript.
+Use links (<a> tags) when you need to
+navigate to another page or change the address. */
