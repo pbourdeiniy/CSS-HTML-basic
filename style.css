@@ -9,12 +9,13 @@
  }
 
  :focus {
-  background-color: #ff0;
+  /* background-color: #ff0; */
+  outline-color: yellowgreen;
  }
 
  /* :valid  */
   input:invalid {
-  border-color: red;
+  /* border-color: red; */
  }
 
  input:checked + label {
@@ -36,13 +37,13 @@
  button:disabled {
   /* color: #444; */
  }
+ 
+   
+  
 
-/* Buttons and links are interactive interface 
-elements that let users interact with a page.
-The submit and reset button types are typically 
-used within forms. Buttons with type="button"
-are used to perform actions without changing 
-the page address. Usually, you handle button 
-clicks with JavaScript.
-Use links (<a> tags) when you need to
-navigate to another page or change the address. */
+ /* you can use keyboard navigation by tab, 
+ tab + shift, space keys to switch among 
+ focusable elements. tabindex="-1" is used to 
+ disable switching on selected field. 
+ tabindex="1" will perform switching 
+ on selected element primarily. */
