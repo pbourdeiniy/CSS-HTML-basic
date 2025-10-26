@@ -1,18 +1,27 @@
-.box1, .box2 {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: blue;
-  margin: 10px;
+.picture {
+ border: 10px solid #000;
+ background-image: url(https://placehold.co/300x150/ff0/00f.png);
+ height: 0;
+ padding-bottom: 50%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
 }
 
-.container {
-  background: green;
+@media (min-width: 576px) {
+  .picture {
+    background-image: url(https://placehold.co/400x200/ff0/00f.png);
+  }
 }
 
 
-.container::after {
-  content: "";
-  display: block;
-  clear: both;
+@media (min-width: 768px) {
+  .picture {
+  background-image: url(https://placehold.co/1200x600/ff0/00f.png);
 }
+}
+
+/* To optimize background images, you can 
+use @media queries. To maintain the 
+desired aspect ratio, you can use 
+padding-bottom with percentage values */
