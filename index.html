@@ -18,54 +18,29 @@
  <h1>Mate academy</h1>
 
  <form action="https://httpbin.org/post " method="post">
-  <label class="form-field">
-    username: <br>
-    <input 
-    type="text"
-    name='username'
-    placeholder="Enter your name"
-    value="Pasha"
-    >
-  </label>
 
   <label class="form-field">
-    Email: <br>
     <input 
-    type="email"
-    name="email"
-    tabindex="-1"
-    >
-  </label>
-
-  <label class="form-field">
-    Password: <br>
-    <input 
-    type="password"
-    name="password"
+    type="radio" 
+    name="sex" 
+    value="male" 
     required
     >
-  </label>
+  Male
+</label>
 
-  <label class="form-field">
+<label class="form-field">
     <input 
-    type="checkbox" 
-    name="accepted" 
-    value="yes"
+    type="radio" 
+    name="sex" 
+    value="female" 
+    disabled
+    checked
     >
-    I accept the terms
-  </label>
-
-  <div class="form-field">
-    <input 
-    type="checkbox" 
-    name="remember" 
-    value="yes" 
-    id="remember-me"
-    checked>
-  <label for="remember-me">Remember me</label>
-  </div>
-
-  <button type="submit">Sign up</button>
+  Female
+</label>
+   
+  <button type="submit">Send</button>
 
  </form>
 

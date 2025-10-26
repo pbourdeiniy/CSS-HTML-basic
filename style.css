@@ -41,9 +41,9 @@
    
   
 
- /* you can use keyboard navigation by tab, 
- tab + shift, space keys to switch among 
- focusable elements. tabindex="-1" is used to 
- disable switching on selected field. 
- tabindex="1" will perform switching 
- on selected element primarily. */
+/* overall radio buttons are used infrequently, 
+   much less often than checkboxes. 
+   It is important to remember set the same 
+   values for attribute name in radio 
+   buttons to ensure correct code 
+   functionality  */
