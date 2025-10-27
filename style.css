@@ -45,7 +45,13 @@
    
   
 
-/* An <input type="hidden"> is used to send 
-data to the server that the user shouldn’t 
-normally edit or see */
+/* Forms allow us to receive data from the user 
+and handle it on the server. To collect data, 
+we use form fields (usually <input> elements).
+To send the data, we use buttons (for example, 
+a <button> element). The name attribute is used 
+to label or identify the value of a field.
+The action attribute defines the address (URL)
+ where the data will be sent. The method 
+ attribute specifies how the data will be sent */
 
