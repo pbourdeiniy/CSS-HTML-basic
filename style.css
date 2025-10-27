@@ -45,8 +45,7 @@
    
   
 
-/* If we just need to work with plain text, we 
-can use a <textarea>. If we want to add 
-formatting, JavaScript is needed to insert the 
-necessary HTML tags inside our container. */
+/* An <input type="hidden"> is used to send 
+data to the server that the user shouldn’t 
+normally edit or see */
 

@@ -20,18 +20,32 @@
  <form action="https://httpbin.org/post " method="post">
 
   <label class="form-field">
-     Description:
-     <textarea 
-     name="description" 
-     placeholder="Enter some description"
-     rows="5"
-     cols="20"
-    ></textarea>
-
-      <div contenteditable="">Lorem <b>ipsum</b> dolor sit amet.</div>
+     Name:
+    <input 
+    type="text" 
+    name="name"
+    value="Pasha"
+    required
+    >
   </label>
 
-  <button type="submit">Send</button>
+
+  <label class="form-field">
+     Email:
+    <input 
+    type="email"
+    name="email"
+     required
+    >
+  </label>
+
+  <button type="submit">Join</button>
+
+  <input 
+  type="hidden"
+  name="profession"
+  value="fullstack"
+  >
 
  </form>
 
