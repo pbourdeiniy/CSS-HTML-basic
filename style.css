@@ -1,5 +1,5 @@
  .form-field {
-  display: inline-block;
+  display: block;
   margin-bottom: 10px;
  }
 
@@ -45,7 +45,8 @@
    
   
 
-/* <select> is useful, but it’s hard to style
- consistently. To style a dropdown fully, 
- developers usually build a custom one
-  using a button, ul and li elements.*/
+/* If we just need to work with plain text, we 
+can use a <textarea>. If we want to add 
+formatting, JavaScript is needed to insert the 
+necessary HTML tags inside our container. */
+
