@@ -1,5 +1,5 @@
  .form-field {
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
  }
 
@@ -14,9 +14,9 @@
  }
 
  /* :valid  */
-  input:invalid {
+  /* input:invalid { */
   /* border-color: red; */
- }
+ /* } */
 
  input:checked + label {
   color: green;
@@ -30,20 +30,22 @@
   color: blue;
  }
 
+  
+
  button:active {
   color: orange;
  }
 
- button:disabled {
+ /* button:disabled { */
   /* color: #444; */
- }
+ /* } */
+
+ 
  
    
   
 
-/* overall radio buttons are used infrequently, 
-   much less often than checkboxes. 
-   It is important to remember set the same 
-   values for attribute name in radio 
-   buttons to ensure correct code 
-   functionality  */
+/* <select> is useful, but it’s hard to style
+ consistently. To style a dropdown fully, 
+ developers usually build a custom one
+  using a button, ul and li elements.*/

@@ -20,25 +20,21 @@
  <form action="https://httpbin.org/post " method="post">
 
   <label class="form-field">
-    <input 
-    type="radio" 
-    name="sex" 
-    value="male" 
-    required
-    >
-  Male
+    Day of week:
+
+   <select name="weekday" required>
+    <option value="" disabled>Please choose a day</option>
+    <option value="mon">Monday</option>
+    <option value="tue" selected>Tuesday</option>
+    <option value="wed">Wednesday</option>
+    <option value="thu">Thursday</option>
+    <option value="fri">Friday</option>
+    <option value="sat" selected>Saturday</option>
+    <option value="sun">Sunday</option>
+
+   </select>
 </label>
 
-<label class="form-field">
-    <input 
-    type="radio" 
-    name="sex" 
-    value="female" 
-    disabled
-    checked
-    >
-  Female
-</label>
    
   <button type="submit">Send</button>
 
