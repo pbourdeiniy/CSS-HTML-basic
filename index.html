@@ -70,7 +70,175 @@ Password: <br>
   >
   <label for="remember-me">Remember me</label>
   </div>
-  
+
+  <label for="tentacles" style="display:block">
+    Number of tentacles(10 - 100):
+    </label>
+
+  <input 
+   type="number" 
+   name="tentacles"
+   id="tentacles"
+   min="10"
+   max="100"
+   step="5"
+   style="margin-bottom: 10px"
+   >
+
+   <label for="phone" style="display:block">
+    Enter your phone number:
+    </label>
+
+  <input 
+   type="tel" 
+   name="phone"
+   id="phone"
+   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+   style='margin-bottom: 10px'
+  >
+   
+
+  <label for='start' style="display:block">
+    Start date:
+    </label>
+
+  <input 
+   type="date" 
+   name="trip-start"
+   id="start"
+   value="2025-10-28"
+   min="1900-01-01"
+   max="2025-10-28"
+   style='margin-bottom: 10px'
+   >
+
+   <label for='month' style="display:block">
+    Start month:
+    </label>
+
+  <input 
+   type="month" 
+   name="trip-start-month"
+   id="month"
+   min="2023-01"
+   max="2025-10"
+   value="2025-05"
+   style='margin-bottom: 10px'
+   >
+
+   <label for='time' style="display:block">
+    Choose a time for meeting:
+    </label>
+
+    <input 
+   type="time" 
+   name="meeting-start"
+   id="time"
+   value="09:00"
+   min="09:00"
+   max="18:00"
+   style='margin-bottom: 10px'
+   >
+
+   <p>Audio settings:</p>
+
+   <div>
+     <input
+     type="range"
+     name="volume"
+     id="volume"
+     value="10"
+     min="1"
+     max="10"
+     >
+     <label for="volume">Volume</label>
+   </div>
+
+   <div>
+     <input
+     type="range"
+     name="cowbel"
+     id="cowbel"
+     value="100"
+     min="1"
+     max="100"
+     step="5"
+     >
+     <label for="cowbel">Cowbel</label>
+   </div>
+
+
+   <p>Choose your monsters color:</p>
+
+   <div>
+     <input
+     type="color"
+     name="head"
+     id="head"
+     value="#e66465"
+     >
+     <label for="head">Head</label>
+   </div>
+
+   <div>
+     <input
+     type="color"
+     name="body"
+     id="body"
+     value="#f6b73c"
+     >
+     <label for="body">Body</label>
+   </div>
+
+   <label for="avatar" class="form-field">
+    Choose a profile picture:
+   </label>
+
+   <input 
+   type="file" 
+   id="avatar" 
+   name="avatar"
+   accept="image/png, image/jpeg"
+   class="form-field"
+   >
+
+   <fieldset>
+   <legend>
+    Choose your favorite monster
+   </legend>
+
+   <div>
+     <input
+     type="radio"
+     name="monster"
+     id="kraken"
+     value="kr"
+     >
+     <label for="kraken">Kraken</label>
+   </div>
+
+   <div>
+     <input
+     type="radio"
+     name="monster"
+     id="pokemon"
+     value="pok"
+     >
+     <label for="pok">Pokemon</label>
+   </div>
+
+   <div>
+     <input
+     type="radio"
+     name="monster"
+     id="bigfoot"
+     value="bf"
+     >
+     <label for="bigfoot">Bigfoot</label>
+   </div>
+
+   </fieldset>
+   
 
   <button>Send</button>
 
