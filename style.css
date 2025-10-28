@@ -1,57 +1,16 @@
- .form-field {
-  display: block;
+.form-field {
   margin-bottom: 10px;
- }
-
- input::placeholder {
-  color: purple;
-  font-weight: bold;
- }
-
- :focus {
-  /* background-color: #ff0; */
-  outline-color: yellowgreen;
- }
-
- /* :valid  */
-  /* input:invalid { */
-  /* border-color: red; */
- /* } */
-
- input:checked + label {
-  color: green;
- }
-
- label:has(input:checked) {
-  color: blue;
- }
-
- button:hover {
-  color: blue;
- }
-
-  
-
- button:active {
-  color: orange;
- }
-
- /* button:disabled { */
-  /* color: #444; */
- /* } */
+}
 
  
  
    
   
 
-/* Forms allow us to receive data from the user 
-and handle it on the server. To collect data, 
-we use form fields (usually <input> elements).
-To send the data, we use buttons (for example, 
-a <button> element). The name attribute is used 
-to label or identify the value of a field.
-The action attribute defines the address (URL)
- where the data will be sent. The method 
- attribute specifies how the data will be sent */
+/* The disabled attribute removes the ability 
+to interact with a form field. Its name and 
+value will not be included when the form is 
+submitted. The readonly attribute also prevents 
+interaction with the form field,
+but its name and value will be sent to the server. */
 
