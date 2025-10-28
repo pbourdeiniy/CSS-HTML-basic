@@ -7,10 +7,4 @@
    
   
 
-/* The disabled attribute removes the ability 
-to interact with a form field. Its name and 
-value will not be included when the form is 
-submitted. The readonly attribute also prevents 
-interaction with the form field,
-but its name and value will be sent to the server. */
 
