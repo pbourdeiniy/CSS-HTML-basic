@@ -1,8 +1,48 @@
-.form-field {
-  margin-bottom: 10px;
-  display: block;
+.blue {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  background-color: #0057b7;
+  z-index: 1;
+  opacity: 0.2;
 }
 
+.yellow {
+  background-color: #ffd700;
+  position: relative;
+}
+
+.box {
+height: 100px;
+width: 70%;
+}
+
+.container {
+  margin: 20px auto;
+  width: 400px;
+  border: 5px solid green;
+}
+
+.text {
+  padding: 10px;
+  margin: 0;
+  background-color: #ccc;
+}
+
+ 
+/* The position: relative property 
+allows us to move an element relative 
+to its original position in the document
+flow. You can do this using the top, 
+bottom, left, and right properties.
+All positioned elements appear above
+regular (static) elements by default.
+You can control their stacking order 
+using the z-index property — an element 
+with a higher z-index value will appear 
+on top. If you want to make an element 
+transparent, you can use the opacity 
+property.*/
  
 
  
