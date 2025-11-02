@@ -11,21 +11,19 @@
 
  body {
   margin: 0;
-  padding-top: var(--header-height);
  }
 
 
 
 .nav {
-position: fixed;
+position: sticky;
 top: 0;
-left: 0;
-right: 0;
 background-color: var(--header-color);
 display: flex;
 gap: 20px;
 justify-content: center;
 align-items: center;
+z-index: 1;
 }
 
 .nav__link {
@@ -58,7 +56,10 @@ border: 1px solid var(--section-border-color);
 /* #endregion */
 
 .section__title {
+position: sticky;
 margin: 0 0 16px;
+top: var(--header-height);
+
 }
 .go-back {
   position: fixed;
@@ -76,28 +77,36 @@ background-color: #000;
 color: #fff;
 padding: 50px;
 text-align: center;
+position: sticky;
+bottom: 0;
+z-index: -1;
 }
 
 
  
-/* position: fixed
-The element is positioned relative to 
-the browser window (viewport).
-It stays in the same place even when 
-you scroll the page.
-In other words, its position is fixed 
-to the screen, not the document. 
+/* Unlike position: fixed, position: sticky keeps
+ its original place in the page layout.
+In other words, other elements on the page are 
+aware of a sticky element’s space.
+position: sticky elements behave like block-level 
+elements — they stretch to the full width of 
+their parent. A sticky element begins to “stick” 
+when the page is scrolled to the specified offset.
+In our case, the <nav> has top: 0, so it becomes 
+fixed when the scroll position reaches the top 
+of the page.The .section-title elements start 
+sticking when the scroll position reaches 
+--header-height (50px) from the top edge.
+Overall, position: sticky is usually more 
+convenient. However, for a “go to top” button, 
+we don’t want the element to take up any space 
+on the page — so we use position: fixed, which 
+keeps it in the same spot relative to the browser 
+window.
+By setting the footer to position: sticky and 
+z-index: -1,  we can create a “fixed footer” 
+effect.   
 
-position: absolute
-The element is positioned relative to its 
-nearest positioned ancestor 
-(an ancestor with position: relative, 
-absolute, or fixed).If there is no 
-positioned ancestor, it is positioned 
-relative to the document (the <html> 
-element).
-So, when you scroll the page, the 
-element will move together with the document.
 */
 
  
