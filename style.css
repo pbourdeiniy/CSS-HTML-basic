@@ -1,15 +1,8 @@
-.blue {
-  position: relative;
-  top: 50px;
-  left: 20px;
-  background-color: #0057b7;
-  z-index: 1;
-  opacity: 0.2;
-}
-
-.yellow {
-  background-color: #ffd700;
-  position: relative;
+.container {
+  margin: 20px auto;
+  width: 400px;
+  border: 5px solid green;
+  position:relative;
 }
 
 .box {
@@ -17,32 +10,41 @@ height: 100px;
 width: 70%;
 }
 
-.container {
-  margin: 20px auto;
-  width: 400px;
-  border: 5px solid green;
+
+.blue {
+  position: absolute;
+  background-color: #0057b7;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  right: 10px;
+  bottom: 10px;
+
 }
 
-.text {
-  padding: 10px;
-  margin: 0;
-  background-color: #ccc;
+.yellow {
+  background-color: #ffd700;
 }
+
+
 
  
-/* The position: relative property 
-allows us to move an element relative 
-to its original position in the document
-flow. You can do this using the top, 
-bottom, left, and right properties.
-All positioned elements appear above
-regular (static) elements by default.
-You can control their stacking order 
-using the z-index property — an element 
-with a higher z-index value will appear 
-on top. If you want to make an element 
-transparent, you can use the opacity 
-property.*/
+/* To take an element out of the normal page flow 
+and place it above other elements, you can use 
+position: absolute.
+In this case, you usually add position: relative 
+to a parent (ancestor) element.
+Then the properties top, right, bottom, and left 
+position the element relative to that ancestor
+ instead of the whole page.
+Note that right and bottom behave differently 
+than they do with position: relative.
+Also, space is not reserved for absolutely 
+positioned elements, unlike relatively positioned
+ ones.
+Therefore, other elements on the page behave as 
+if the absolutely positioned element does not exist */
+
  
 
  
