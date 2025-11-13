@@ -30,20 +30,11 @@
 
  
 /* 
-If content doesn’t fit, it overflows 
-the container’s borders. Vertical scrolling
- is usually acceptable to see the full text,
-  but horizontal scrolling — especially on
-   a page — is inconvenient because it makes
-    navigation less comfortable.
-It is generally recommended to avoid 
-horizontal scrolling. To achieve this, 
-you can avoid fixing the width of all 
-elements in a row and allow at least
- one element to have an automatic width. 
- If scrolling is necessary, it can be 
- controlled using the overflow property
-
+HTML character entities are a useful tool.
+There are various types of HTML entities,
+ but I will highlight the non-breaking 
+ space (&nbsp;), which is an indispensable
+helper for text formatting
 */
 
  
