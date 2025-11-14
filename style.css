@@ -1,64 +1,26 @@
-.link {
-  display:block;
-  margin: 8px 0;
-  padding: 8px;
-  border-radius: 8px;
-
-  background-color: tomato;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-
-.link-2 {
-   /* display: none; */
-   /* visibility: hidden; */
-   opacity: 0;
-   pointer-events: none;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
+ .title {
+  border: 3px solid black;
+  width: 300px;
+  /* box-shadow: 10px 5px 5px red ; */
+  /* box-shadow: 30px -15px teal; */
+  /* box-shadow: inset 5em 1em gold; */
+  /* text-shadow: 1px 1px 2px green; */
+  text-shadow: 1px 1px 0 green;
+  text-shadow: #fc0 1px 0 10px;
+ }
 
 
  
-/* 
-If we want to hide an element temporarily, 
-we can use display: none — the browser
-removes the element from the layout 
-entirely, and it does not take up any 
-space. It’s also not accessible to screen 
-readers.
-If we use visibility: hidden, the browser 
-still reserves the space for the element,
-but it becomes invisible. It is still not 
-interactive and usually not read by screen 
-readers.
-If we set opacity: 0, the element becomes 
-fully transparent, but it still takes up 
-space and can still be interacted with 
-(clicked, focused, etc.), because it 
-remains fully in the layout.
-The .visually-hidden class hides the 
-element visually but keeps it in the 
-document for accessibility. This means 
-screen readers can still read it, which 
-is important for labels, descriptions, 
-or other assistive-technology content.
-
  
 
  
- 
+ /* 
+Box-shadow and text-shadow are useful tools 
+for designing pages, and they can 
+significantly improve the overall 
+appearance of a website
+
+ */
    
   
 
